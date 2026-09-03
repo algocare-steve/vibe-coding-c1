@@ -1,0 +1,10 @@
+# 이 저장소는 한 폴더에 여러 단계의 프로젝트가 들어 있으므로,
+# 배포 대상을 algocare-next로 명시한다.
+[build]
+  base = "algocare-next"
+  command = "npm run build"
+  publish = ".next"
+
+[build.environment]
+  # lib/db.js가 Node 내장 모듈인 node:sqlite를 사용하므로 22 이상이 필요하다.
+  NODE_VERSION = "22"
