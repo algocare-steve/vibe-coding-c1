@@ -1,0 +1,4 @@
+node_modules
+
+# local database (실제 데이터이므로 기록하지 않음)
+routine.db
