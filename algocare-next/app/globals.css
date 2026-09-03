@@ -99,7 +99,16 @@ header h1 {
   animation-delay: 0.05s;
 }
 
-header p:first-of-type {
+header p.tagline {
+  margin-top: 0.75rem;
+  color: var(--color-ink-soft);
+  font-size: 0.9rem;
+  font-weight: 400;
+  letter-spacing: 0.01em;
+  animation-delay: 0.12s;
+}
+
+header p.badge {
   display: inline-block;
   margin-top: var(--space-3);
   padding: 0.5rem 1.25rem;

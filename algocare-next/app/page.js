@@ -56,7 +56,8 @@ export default function Page() {
 
       <header>
         <h1>차원이 다른 알고케어 뉴트리션</h1>
-        <p>작지만 꽉 찬 5.1mm 초소형 영양제</p>
+        <p className="tagline">매일 챙기는 걸 기록하는 곳</p>
+        <p className="badge">작지만 꽉 찬 5.1mm 초소형 영양제</p>
         <p>서울대 약사 연구진이 자체 연구·개발한 알고케어만의 프리미엄 영양제</p>
       </header>
 
