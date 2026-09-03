@@ -3,7 +3,13 @@
 [build]
   base = "algocare-next"
   command = "npm run build"
-  publish = ".next"
+
+# publish는 지정하지 않는다.
+# Next.js 런타임이 .next 결과물을 페이지와 서버리스 함수로 나눠 배치하므로,
+# publish를 직접 ".next"로 박으면 빌드 폴더가 정적 파일로 그대로 올라가고
+# API 라우트가 함수로 배포되지 않는다.
+[[plugins]]
+  package = "@netlify/plugin-nextjs"
 
 [build.environment]
   # lib/db.js가 Node 내장 모듈인 node:sqlite를 사용하므로 22 이상이 필요하다.
